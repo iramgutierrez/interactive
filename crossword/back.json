@@ -1,0 +1,66 @@
+{
+  "acrossClues": [
+    {
+      "answer": "QWERTYU",
+      "clue": "Factor actitudinal clave para el desarrollo personal y profesional.",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "answer": "",
+      "clue": "Se refiere a la clase de sentimientos individuales de aceptación o de rechazo en relación con el comportamiento perseguido que se exige.",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "answer": "",
+      "clue": "Acción de cómo cada persona de la organización influye, con la calidad de sus acciones, en las demás y en la comunidad entera.",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "answer": "",
+      "clue": "Es la concordancia, la simpatía y el reflejar a otra persona para establecer un clima de confianza y armonía para enriquecer las relaciones que se establecen con los semejantes.",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "answer": "",
+      "clue": "Es una de las 2 C's que refuerza el Tema 4.",
+      "x": 10,
+      "y": 0
+    }
+  ],
+  "downClues": [
+    {
+      "answer": "MM",
+      "clue": "Filósofo que dijo la frase “Aquel que quiera mover el mundo, deberá moverse a sí mismo primero”",
+      "x": 2,
+      "y": 2
+    },
+    {
+      "answer": "",
+      "clue": "Es el sentimiento que tiene una persona al no saber si será competente.",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "answer": "",
+      "clue": "Nombre del filósofo que dijo la frase “Al cambiar nuestras actitudes, podíamos cambiar nuestras vidas”.",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "answer": "",
+      "clue": "Apellido del autor del libro “Una vida sin límites” el cual sirvió como base para el desarrollo de este tema.",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "answer": "",
+      "clue": "Es una de las actitudes que detonan una reacción en cadena de buenas acciones.",
+      "x": 0,
+      "y": 0
+    }
+  ]
+}
