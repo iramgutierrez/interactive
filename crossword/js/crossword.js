@@ -118,7 +118,6 @@ function centerBoard(){
 
 
 function resizeGrid(option) {
-    console.log(option)
     if (option == RESIZE_OPTION.UNKNOWN) {
         resize();
         centerBoard();
@@ -507,6 +506,7 @@ function createSolvedCrosswordGrid() {
             grid[downClues[y].x][downClues[y].y + i] = {letter: answer[i]};
         }
     }
+
     return grid;
 }
 
@@ -517,22 +517,46 @@ function setCrosswordNumbers() {
     var number = 1;
     for( var y = 0; y < rows; y++) {
         for(var x = 0; x < cols; x++) {
-            if((findClosestWord(x, y, 1, 0) && !findClosestWord(x, y, -1, 0)) || (findClosestWord(x, y, 0, 1) && !findClosestWord(x, y, 0, -1))){
-                for(var i = 0; i < acrossClues.length; i++) {
-                    if(acrossClues[i].x == x && acrossClues[i].y == y) {
-                        acrossClues[i].number = number;
+            /*
+
+            if(findX || findY)
+            {*/
+                if((findClosestWord(x, y, 1, 0) && !findClosestWord(x, y, -1, 0)) || (findClosestWord(x, y, 0, 1) && !findClosestWord(x, y, 0, -1))){
+
+                    findX = puzzle.acrossClues.find(function(clue){
+                        return clue.x == x && clue.y == y;
+                    });
+
+                    findY = puzzle.downClues.find(function(clue){
+                        return clue.x == x && clue.y == y;
+                    });
+
+                    if(findX)
+                    {
+                        number = findX.number;
                     }
-                }
-                for(var i = 0; i < downClues.length; i++) {
-                    if(downClues[i].x == x && downClues[i].y == y) {
-                        downClues[i].number = number;
+                    else if(findY)
+                    {
+                        number = findY.number;
                     }
+                    for(var i = 0; i < downClues.length; i++) {
+                        if(acrossClues[i].x == x && acrossClues[i].y == y) {
+                            acrossClues[i].number = number;
+                        }
+                    }
+                    for(var i = 0; i < downClues.length; i++) {
+                        if(downClues[i].x == x && downClues[i].y == y) {
+                            downClues[i].number = number;
+                        }
+                    }
+
+                    if(solvedState[x][y]) {
+                        solvedState[x][y].number = number;
+                        //number++;
+                    }
+
                 }
-                if(solvedState[x][y]) {
-                    solvedState[x][y].number = number;
-                    number++;
-                }
-            }
+            //}
         }
     }
 }
@@ -991,12 +1015,6 @@ function getClueByNumber(w){
         if(arr[i].number == w.number)
         return arr[i].clue;
     }
-
-   /* for(var i=0;i<clues.length;i++){
-        console.log(clues[i])
-        if(clues[i].number ==n)
-            return clues[i].clue;
-    }*/
 }
 
 
@@ -1312,7 +1330,6 @@ function Cell(number, x, y){
     var thisCell=this;
 
     this.onClick = function (e){
-        console.log("click")
         cellClicked(thisCell, e);
     }
     this.addEventListener("click", this.onClick, false);

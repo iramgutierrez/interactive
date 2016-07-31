@@ -1,68 +1,78 @@
 {
-    "width": 23,
-    "height": 23,
+    "width": 15,
+    "height": 15,
     "acrossClues": [
         {
-            "answer": "QWERTYU",
+            "number": "1 ",
+            "answer": "CONCENTRACION",
             "clue": "Factor actitudinal clave para el desarrollo personal y profesional.",
-            "x": 1,
-            "y": 1
-        },
-        {
-            "answer": "TEueidkrotiue",
-            "clue": "Se refiere a la clase de sentimientos individuales de aceptación o de rechazo en relación con el comportamiento perseguido que se exige.",
             "x": 2,
             "y": 4
         },
         {
-            "answer": "WAZAOL",
+            "number": "2 ",
+            "answer": "AFECTIVO",
+            "clue": "Se refiere a la clase de sentimientos individuales de aceptación o de rechazo en relación con el comportamiento perseguido que se exige.",
+            "x": 7,
+            "y": 1
+        },
+        {
+            "number": "3 ",
+            "answer": "SERVICIO",
             "clue": "Acción de cómo cada persona de la organización influye, con la calidad de sus acciones, en las demás y en la comunidad entera.",
-            "x": 0,
-            "y": 12
+            "x": 2,
+            "y": 9
         },
         {
-            "answer": "PIYUJERA",
+            "number": "4 ",
+            "answer": "SINTONIA",
             "clue": "Es la concordancia, la simpatía y el reflejar a otra persona para establecer un clima de confianza y armonía para enriquecer las relaciones que se establecen con los semejantes.",
-            "x": 14,
-            "y": 2
+            "x": 7,
+            "y": 11
         },
         {
-            "answer": "PARETYU",
+            "number": "5 ",
+            "answer": "CALIDEZ",
             "clue": "Es una de las 2 C&#39;s que refuerza el Tema 4.",
-            "x": 13,
-            "y": 8
+            "x": 0,
+            "y": 13
         }
     ],
     "downClues": [
         {
-            "answer": "WERTYUIO",
+            "number": 1,
+            "answer": "SOCRATES",
             "clue": "Filósofo que dijo la frase “Aquel que quiera mover el mundo, deberá moverse a sí mismo primero”",
             "x": 2,
-            "y": 1
+            "y": 2
         },
         {
-            "answer": "RUWEASUSAOL",
+            "number": 2,
+            "answer": "INSEGURIDAD",
             "clue": "Es el sentimiento que tiene una persona al no saber si será competente.",
             "x": 4,
             "y": 3
         },
         {
-            "answer": "RURERJUI",
+            "number": 3,
+            "answer": "WILLIAM",
             "clue": "Nombre del filósofo que dijo la frase “Al cambiar nuestras actitudes, podíamos cambiar nuestras vidas”.",
-            "x": 9,
-            "y": 2
+            "x": 12,
+            "y": 0
         },
         {
-            "answer": "POIRETAU",
+            "number": 4,
+            "answer": "VUJICIC",
             "clue": "Apellido del autor del libro “Una vida sin límites” el cual sirvió como base para el desarrollo de este tema.",
-            "x": 14,
-            "y": 2
+            "x": 8,
+            "y": 6
         },
         {
-            "answer": "REATESA",
+            "number": 5,
+            "answer": "BONDAD",
             "clue": "Es una de las 2 C's que refuerza el Tema 4.",
-            "x": 17,
-            "y": 5
+            "x": 14,
+            "y": 7
         }
     ],
     "settings": {
