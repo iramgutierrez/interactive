@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+
+        <title>Tema 4 - Verdadero o falso</title>
+
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+<body>
+
+<div id="content">
+
+    <div id="intro">
+
+        <nav class="telcel darken-3 z-depth-0">
+            <div class="nav-wrapper">
+                <div class="game_title v_center primary_text">
+                    Verdadero o falso
+                </div>
+                <ul class="right">
+                    <li class=""><a href="#modal1" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="telcel z-depth-1 start_container">
+
+                    <span id="crossword_theme" class="primary_text">
+                        Tema 4. Gestionando el contacto con el cliente interno para un servicio eficaz y eficiente.
+                    </span>
+
+            <div id="btn_start_wrapper">
+                <a id="btn_start" class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons">play_arrow</i></a>
+            </div>
+        </div>
+
+
+        <div id="intro_content">
+            <div class="desc_wrapper">
+                <p id="description">
+                    OBJETIVO DE LA ACTIVIDAD: Confirmar los conocimientos adquiridos a través de la lectura de este tema.
+                    <br>
+                    <br>
+                    <strong>Pulsa el boton para iniciar</strong>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div id="crossword">
+
+        <nav class="telcel darken-3 z-depth-0">
+            <div class="nav-wrapper">
+                <div id="main_title" class="v_center primary_text game_title">
+                    Verdadero o falso
+                </div>
+                <ul class="right">
+                    <li class=""><a href="#modal1" class="modal-trigger"><i class="material-icons toolbar_item v_center primary_text">info_outline</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="telcel z-depth-1" id="header_clue_wrapper">
+            <div id="header_clue" class="primary_text">
+                A continuación se presenta una situación relacionada con los conceptos tratados en este tema. <br>Lee la situación y en el paréntesis correspondiente, coloca una F si es falsa y una V si es verdadera.
+            </div>
+        </div>
+
+        <div id="game_view">
+            <div id="game">
+                <div id="board">
+                    <div class="row">
+                        <div class="col s12">
+                            Ramón logró entregar, en tiempo y forma, el reporte que le pidió su jefe, el Sr. Pacheco, después de haberlo re-procesado 4 veces, debido a información incompleta o errónea que le daban sus compañeros.
+                            <br>Indica si las siguientes afirmaciones sobre la situación son falsas o verdaderas.
+                        </div>
+                        <div class="col s10 wrapper">
+                            <ul>
+                                <li>
+                                    <div class="col s10">
+                                        Ramón fue eficaz pero ineficiente.
+                                    </div>
+                                    <div class="col s2">
+                                        (<input type="text" minlength="1" maxlength="1" class="answer">)
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col s10">
+                                        Sus compañeros fueron eficientes.
+                                    </div>
+                                    <div class="col s2">
+                                        (<input type="text" minlength="1" maxlength="1" class="answer">)
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col s10">
+                                        Un momento de verdad es cuando el Sr. Pacheco le pide a Ramón que haga el reporte.
+                                    </div>
+                                    <div class="col s2">
+                                        (<input type="text" minlength="1" maxlength="1" class="answer">)
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col s10">
+                                        El ciclo de servicio se inició cuando Ramón recibió la información de sus compañeros para el reporte.
+                                    </div>
+                                    <div class="col s2">
+                                        (<input type="text" minlength="1" maxlength="1" class="answer">)
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 id="help_title">Instrucciones</h4>
+            <p id="help_text">
+                A continuación se presenta una situación relacionada con los conceptos tratados en este tema. Lee la situación y en el paréntesis correspondiente, coloca una F si es falsa y una V si es verdadera.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a id="btn_dialog_close" href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal modal-fixed-footer">
+        <div id="congrat" class="modal-content">
+            <h4 id="congrat_title">¡Muy bien!</h4>
+            <div class="checkmark center">
+                <object data="images/checkmark.svg" type="image/svg+xml">
+                </object>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="dialog_close modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
