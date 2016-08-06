@@ -29,22 +29,38 @@ function keyUp()
 
     check();
 }
+var validFirst = false;
 
 function check()
 {
     var ourAnswer = '';
-
+    var count = 0;
     $("input.answer").each(function(k,a){
+
+        if($(a).val() != '')
+        {
+            count++;
+        }
         ourAnswer += $(a).val();
     });
-
-    if(btoa(btoa(ourAnswer)) == correct)
+    if(count == 4)
     {
-        if(!$('#modal3').is(":visible"))
+        if(btoa(btoa(ourAnswer)) == correct)
         {
-            $('#modal3').openModal();
+            if(!$('#modal3').is(":visible"))
+            {
+                $('#modal3').openModal();
+            }
+            $("input.answer").addClass('correct');
         }
-        $("input.answer").addClass('correct');
+        else
+        {
+            if(!validFirst)
+            {
+                $('#modal4').openModal();
+                validFirst = true;
+            }
+        }
     }
 }
 $(document).ready(setEvents);

@@ -644,3 +644,10 @@ input[type="password"] { border:0 none; height:1px; background-color:transparent
     background-color: #0a3d7e;
 }
 
+.modal-error {
+    height: 30% !important;
+    color: red;
+    min-height: 155px;
+    text-align: center;
+}
+
