@@ -29,10 +29,6 @@ function keyUp()
 
     check();
 }
-
-var validFirst = false;
-//#02b0ef
-//#0a3d7e
 function check()
 {
     var ourAnswer = '';
@@ -60,11 +56,8 @@ function check()
         }
         else
         {
-            if(!validFirst)
-            {
-                $('#modal4').openModal();
-                validFirst = true;
-            }
+            $('#modal4').openModal();
+            $("input.answer").val('');
         }
     }
 

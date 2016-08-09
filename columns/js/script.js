@@ -29,7 +29,6 @@ function keyUp()
 
     check();
 }
-var validFirst = false;
 
 function check()
 {
@@ -55,11 +54,8 @@ function check()
         }
         else
         {
-            if(!validFirst)
-            {
-                $('#modal4').openModal();
-                validFirst = true;
-            }
+            $('#modal4').openModal();
+            $("input.answer").val('');
         }
     }
 }

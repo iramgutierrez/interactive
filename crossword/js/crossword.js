@@ -1019,6 +1019,7 @@ function getClueByNumber(w){
 
 
 
+var countCells = 73;
 function setLetter(letter, focusNextCell){
     if(selectedCell) {
         selectedCell.setSelected(false);
@@ -1032,6 +1033,26 @@ function setLetter(letter, focusNextCell){
         var gameFinished = trackCorrectAnswers();
 
         if(!gameFinished){
+
+            var countLetters = 0;
+
+            for(var i = 0; i < cellMap.length; i++) {
+                for(var j = 0; j < cellMap[i].length; j++) {
+                    if(typeof cellMap[i][j] != 'undefined' && cellMap[i][j].letter)
+                    {
+                        countLetters++;
+                    }
+                }
+            }
+            if(countLetters >= countCells)
+            {
+                $('#modal5').openModal();
+                /*clearEntireGrid();
+                deselectWord();
+                currentCache = [];
+                selectFirstWord();*/
+            }
+
             if(supportsTouch()){
                 if(selectedCell == selectedCells[selectedCells.length-1]){
                     deselectWord();
@@ -1049,7 +1070,6 @@ function setLetter(letter, focusNextCell){
                 selectedCell.setSelected(true);
 
             stage.update();
-
         }else{
             showSuccess();
         }
