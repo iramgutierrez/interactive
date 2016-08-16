@@ -655,3 +655,23 @@ input[type="password"] { border:0 none; height:1px; background-color:transparent
     text-align: center;
 }
 
+.responses{
+    list-style: disc;
+    width: 80%;
+    margin: 0 auto;
+}
+.responses li span.question{
+    width: 90%;
+    float: left;
+    padding: 10px;
+}
+.responses li span.answer{
+    float: left;
+    text-align: right;
+    width: 10%;
+    font-weight: bold;
+    color: red;
+    font-size: 22px;
+    margin-top: 10px;
+}
+

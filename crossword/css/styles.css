@@ -632,3 +632,17 @@ input[type="password"] { border:0 none; height:1px; background-color:transparent
     text-align: center;
 }
 
+.box-help{
+    width: 46%;
+    padding: 2%;
+    float: left;
+
+}
+.box-help span{
+    color: red;
+    font-weight: bold;
+}
+.box-help h5{
+    text-align: center;
+}
+

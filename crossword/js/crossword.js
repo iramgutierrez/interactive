@@ -1496,8 +1496,20 @@ function jsonLoaded(data){
     puzzle = data;
     acrossClues = puzzle.acrossClues;
     downClues = puzzle.downClues;
-
+    loadResponses(data.acrossClues || [] , data.downClues || []);
     main();
+}
+
+function loadResponses(across , down) {
+    var acrossResponsesContainer = $(".acrossClues-responses");
+    var downResponsesContainer = $(".downClues-responses");
+    acrossResponsesContainer.html('');
+    across.forEach(function(response){
+        acrossResponsesContainer.append("<li>"+response.number+".- "+response.clue+" <span>"+response.answer+"</span></li>");
+    })
+    down.forEach(function(response){
+        downResponsesContainer.append("<li>"+response.number+".- "+response.clue+" <span>"+response.answer+"</span></li>");
+    })
 }
 
 

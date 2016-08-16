@@ -4,7 +4,7 @@
     "acrossClues": [
         {
             "number": "1 ",
-            "answer": "CONCENTRACION",
+            "answer": "CONCENTRACIÓN",
             "clue": "Factor actitudinal clave para el desarrollo personal y profesional.",
             "x": 2,
             "y": 4
@@ -25,7 +25,7 @@
         },
         {
             "number": "4 ",
-            "answer": "SINTONIA",
+            "answer": "SINTONÍA",
             "clue": "Es la concordancia, la simpatía y el reflejar a otra persona para establecer un clima de confianza y armonía para enriquecer las relaciones que se establecen con los semejantes.",
             "x": 7,
             "y": 11
@@ -41,7 +41,7 @@
     "downClues": [
         {
             "number": 1,
-            "answer": "SOCRATES",
+            "answer": "SÓCRATES",
             "clue": "Filósofo que dijo la frase “Aquel que quiera mover el mundo, deberá moverse a sí mismo primero”",
             "x": 2,
             "y": 2
