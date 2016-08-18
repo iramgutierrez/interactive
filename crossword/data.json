@@ -76,7 +76,7 @@
         }
     ],
     "settings": {
-        "alphabet": "ABCÇDEFGHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefghıijklmnoöpqrsştuüvwxyz",
+        "alphabet": "ABCÇDEFGHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefghıijklmnoöpqrsştuüvwxyzÁÉÍÓÚáéíóú",
         "cell_highlight_color": "#c5cae9",
         "selected_cell_color": "#7986cb",
         "letter_cell_color": "#DDDDDD",
