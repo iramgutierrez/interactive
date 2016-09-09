@@ -1564,11 +1564,121 @@ function main() {
 
 $(document).ready(loadJsonFile);
 
+var data = {
+    "width": 15,
+    "height": 15,
+    "acrossClues": [
+        {
+            "number": "1 ",
+            "answer": "CONCENTRACION",
+            "clue": "Factor actitudinal clave para el desarrollo personal y profesional.",
+            "x": 2,
+            "y": 4
+        },
+        {
+            "number": "2 ",
+            "answer": "AFECTIVO",
+            "clue": "Se refiere a la clase de sentimientos individuales de aceptación o de rechazo en relación con el comportamiento perseguido que se exige.",
+            "x": 7,
+            "y": 1
+        },
+        {
+            "number": "3 ",
+            "answer": "SERVICIO",
+            "clue": "Acción de cómo cada persona de la organización influye, con la calidad de sus acciones, en las demás y en la comunidad entera.",
+            "x": 2,
+            "y": 9
+        },
+        {
+            "number": "4 ",
+            "answer": "SINTONIA",
+            "clue": "Es la concordancia, la simpatía y el reflejar a otra persona para establecer un clima de confianza y armonía para enriquecer las relaciones que se establecen con los semejantes.",
+            "x": 7,
+            "y": 11
+        },
+        {
+            "number": "5 ",
+            "answer": "CALIDEZ",
+            "clue": "Es una de las 2 C&#39;s que refuerza el Tema 4.",
+            "x": 0,
+            "y": 13
+        }
+    ],
+    "downClues": [
+        {
+            "number": 1,
+            "answer": "SOCRATES",
+            "clue": "Filósofo que dijo la frase “Aquel que quiera mover el mundo, deberá moverse a sí mismo primero”",
+            "x": 2,
+            "y": 2
+        },
+        {
+            "number": 2,
+            "answer": "INSEGURIDAD",
+            "clue": "Es el sentimiento que tiene una persona al no saber si será competente.",
+            "x": 4,
+            "y": 3
+        },
+        {
+            "number": 3,
+            "answer": "WILLIAM",
+            "clue": "Nombre del filósofo que dijo la frase “Al cambiar nuestras actitudes, podíamos cambiar nuestras vidas”.",
+            "x": 12,
+            "y": 0
+        },
+        {
+            "number": 4,
+            "answer": "VUJICIC",
+            "clue": "Apellido del autor del libro “Una vida sin límites” el cual sirvió como base para el desarrollo de este tema.",
+            "x": 8,
+            "y": 6
+        },
+        {
+            "number": 5,
+            "answer": "BONDAD",
+            "clue": "Es una de las 2 C's que refuerza el Tema 4.",
+            "x": 14,
+            "y": 7
+        }
+    ],
+    "settings": {
+        "alphabet": "ABCÇDEFGHIİJKLMNOÖPQRSŞTUÜVWXYZabcçdefghıijklmnoöpqrsştuüvwxyzÁÉÍÓÚáéíóú",
+        "cell_highlight_color": "#c5cae9",
+        "selected_cell_color": "#7986cb",
+        "letter_cell_color": "#DDDDDD",
+        "empty_cell_color": "#4F4F4F",
+        "cell_line_color": "#393939",
+        "wrong_cell_color": "#FF0000",
+        "letter_color": "#000000",
+        "number_color": "#000000"
+    },
+    "labels": {
+        "clear_dialog_title": "Advertencia",
+        "clear_dialog_text": "¿Deseas borrar el crucigrama?",
+        "crossword_theme": "Tema 2. Desarrollo de actitudes fundamentales de servicio al cliente interno.",
+        "description": "OBJETIVO DE LA ACTIVIDAD: Confirmar los conocimientos adquiridos a través de la lectura de este tema.<br><br><strong>Pulsa el boton para iniciar</strong>",
+        "help_text": "Escribe las respuestas de las preguntas que a continuación se formulan",
+        "help_title": "Instrucciones",
+        "game_title": "Crucigrama",
+        "button_label_dialog_close": "Cerrar",
+        "across": "Horizontal",
+        "down": "Vertical",
+        "congrat_title": "¡Muy bien!",
+        "btn_label_share_win": "Share",
+        "btn_label_yes": "Sí",
+        "btn_label_no": "No",
+        "reveal_letter": "Mostrar letra",
+        "reveal_word": "Mostrar palabra",
+        "submit_answer": "Responder"
+    }
+};
+
 
 function loadJsonFile(){
-    $.getJSON("data.json?r="+Math.random())
+    jsonLoaded(data);
+    /*$.getJSON("/data.json?r="+Math.random())
         .done(jsonLoaded)
         .fail(function() {
             alert('failed to load json');
-        });
+        });*/
 }
