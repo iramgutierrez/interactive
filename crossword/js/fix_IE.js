@@ -113,6 +113,6 @@ if (!Array.prototype.find) {
                 }
             }
             return undefined;
-        };
-});
+        }
+    })
 }
